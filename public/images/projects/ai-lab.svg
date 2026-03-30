@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="36" fill="#F8FBFF" />
+  <rect x="36" y="36" width="1128" height="648" rx="28" fill="#FFFFFF" stroke="#D9E6FF" stroke-width="2" />
+  <rect x="94" y="122" width="310" height="220" rx="24" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" />
+  <rect x="444" y="122" width="310" height="220" rx="24" fill="#0F172A" />
+  <rect x="794" y="122" width="310" height="220" rx="24" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" />
+  <rect x="196" y="416" width="808" height="176" rx="28" fill="#0F172A" />
+  <path d="M404 232H444" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
+  <path d="M754 232H794" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
+  <circle cx="250" cy="230" r="42" fill="#DBEAFE" />
+  <path d="M236 214H264" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
+  <path d="M236 248H264" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
+  <circle cx="948" cy="230" r="42" fill="#DBEAFE" />
+  <rect x="520" y="182" width="158" height="96" rx="18" fill="#172554" />
+  <path d="M262 500H930" stroke="#60A5FA" stroke-width="6" stroke-dasharray="10 12" />
+  <path d="M262 548H930" stroke="#1E40AF" stroke-width="6" stroke-dasharray="10 12" />
+  <text x="110" y="96" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">AI + Systems Placeholder</text>
+  <text x="226" y="466" fill="#DBEAFE" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Automation • Telemetry • Security workflows • Human-in-the-loop tooling</text>
+</svg>

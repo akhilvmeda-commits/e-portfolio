@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="36" fill="#F8FBFF" />
+  <rect x="36" y="36" width="1128" height="648" rx="28" fill="#FFFFFF" stroke="#D9E6FF" stroke-width="2" />
+  <rect x="90" y="120" width="1020" height="480" rx="30" fill="#0F172A" />
+  <circle cx="600" cy="360" r="110" fill="#172554" />
+  <path d="M600 250L684 286V384C684 456 632 506 600 520C568 506 516 456 516 384V286L600 250Z" fill="#DBEAFE" />
+  <path d="M600 292V424" stroke="#2563EB" stroke-width="16" stroke-linecap="round" />
+  <path d="M548 358H652" stroke="#2563EB" stroke-width="16" stroke-linecap="round" />
+  <circle cx="250" cy="226" r="24" fill="#60A5FA" />
+  <circle cx="950" cy="226" r="24" fill="#60A5FA" />
+  <circle cx="250" cy="494" r="24" fill="#60A5FA" />
+  <circle cx="950" cy="494" r="24" fill="#60A5FA" />
+  <path d="M274 226H490" stroke="#60A5FA" stroke-width="6" stroke-dasharray="10 10" />
+  <path d="M710 226H926" stroke="#60A5FA" stroke-width="6" stroke-dasharray="10 10" />
+  <path d="M274 494H490" stroke="#60A5FA" stroke-width="6" stroke-dasharray="10 10" />
+  <path d="M710 494H926" stroke="#60A5FA" stroke-width="6" stroke-dasharray="10 10" />
+  <text x="112" y="94" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Cybersecurity Project Slot</text>
+  <text x="124" y="646" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22">Use this space for packet captures, security dashboards, or incident response visuals.</text>
+</svg>

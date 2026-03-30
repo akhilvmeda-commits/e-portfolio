@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="36" fill="#F8FBFF" />
+  <rect x="36" y="36" width="1128" height="648" rx="28" fill="#FFFFFF" stroke="#D9E6FF" stroke-width="2" />
+  <rect x="86" y="110" width="486" height="500" rx="24" fill="#0F172A" />
+  <rect x="628" y="110" width="486" height="240" rx="24" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" />
+  <rect x="628" y="386" width="486" height="224" rx="24" fill="#F8FBFF" stroke="#CBD5E1" stroke-width="2" />
+  <rect x="156" y="182" width="346" height="356" rx="20" fill="#1E293B" stroke="#60A5FA" stroke-width="2" />
+  <circle cx="236" cy="254" r="28" fill="#2563EB" />
+  <circle cx="424" cy="254" r="28" fill="#DBEAFE" />
+  <path d="M250 254H410" stroke="#60A5FA" stroke-width="8" stroke-linecap="round" />
+  <path d="M236 360H424" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" />
+  <path d="M236 420H424" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" />
+  <path d="M236 480H424" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" />
+  <path d="M704 194H1036" stroke="#2563EB" stroke-width="10" stroke-linecap="round" />
+  <path d="M704 250H968" stroke="#475569" stroke-width="10" stroke-linecap="round" />
+  <rect x="694" y="458" width="154" height="34" rx="12" fill="#DBEAFE" />
+  <rect x="694" y="510" width="286" height="34" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" />
+  <rect x="694" y="562" width="232" height="34" rx="12" fill="#0F172A" />
+  <text x="94" y="92" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Embedded Bring-Up</text>
+  <text x="640" y="92" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Driver Validation</text>
+  <text x="94" y="650" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22">Placeholder image for custom PCB, firmware, and integration work.</text>
+</svg>

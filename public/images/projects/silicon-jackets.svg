@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" fill="none">
+  <rect width="1400" height="860" rx="40" fill="#F8FBFF" />
+  <rect x="44" y="44" width="1312" height="772" rx="32" fill="#FFFFFF" stroke="#D9E6FF" stroke-width="2" />
+  <rect x="94" y="106" width="510" height="314" rx="24" fill="#0F172A" />
+  <rect x="646" y="106" width="660" height="314" rx="24" fill="#F8FBFF" stroke="#CBD5E1" stroke-width="2" />
+  <rect x="94" y="464" width="1212" height="286" rx="24" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" />
+  <path d="M194 250H506" stroke="#60A5FA" stroke-width="12" stroke-linecap="round" />
+  <path d="M194 300H398" stroke="#DBEAFE" stroke-width="12" stroke-linecap="round" />
+  <path d="M772 214H1190" stroke="#1D4ED8" stroke-width="8" stroke-linecap="round" />
+  <path d="M772 274H1120" stroke="#475569" stroke-width="8" stroke-linecap="round" />
+  <rect x="734" y="160" width="22" height="22" rx="4" fill="#2563EB" />
+  <rect x="734" y="220" width="22" height="22" rx="4" fill="#0F172A" />
+  <path d="M186 540H1194" stroke="#2563EB" stroke-width="4" stroke-dasharray="10 12" />
+  <path d="M186 610H1194" stroke="#0F172A" stroke-width="4" stroke-dasharray="10 12" />
+  <path d="M186 680H1194" stroke="#60A5FA" stroke-width="4" stroke-dasharray="10 12" />
+  <rect x="222" y="516" width="122" height="50" rx="18" fill="#0F172A" />
+  <rect x="534" y="586" width="122" height="50" rx="18" fill="#2563EB" />
+  <rect x="932" y="656" width="122" height="50" rx="18" fill="#0F172A" />
+  <text x="104" y="90" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Silicon Jackets</text>
+  <text x="104" y="138" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Parameterized Adder RTL</text>
+  <text x="658" y="90" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Verification Dashboard</text>
+  <text x="112" y="444" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Simulation + Waveform Debug</text>
+</svg>
