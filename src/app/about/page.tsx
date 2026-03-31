@@ -16,7 +16,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl space-y-16 px-6 py-16">
       <PageHeader
         title="About"
-        intro="Background, interests, and direction."
+        intro="A little more about how I got here, what I like building, and what I am working toward."
       />
 
       <section className="section-panel grid gap-8 rounded-[40px] px-6 py-8 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
@@ -65,11 +65,10 @@ export default function AboutPage() {
             I am building toward secure hardware and systems leadership.
           </h2>
           <p className="mt-4 leading-8 text-slate-600 dark:text-slate-300">
-            I want this portfolio to show more than isolated achievements. It
-            is meant to communicate direction: I learn quickly, I like working
-            across technical layers, and I am steadily moving toward roles
-            where hardware correctness, embedded integration, and security all
-            matter together.
+            I want this portfolio to feel clear and honest. I care about
+            learning fast, putting real work behind what I say I am interested
+            in, and building toward roles where hardware correctness, embedded
+            integration, and security all matter at the same time.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <ButtonLink href="/resume" label="View Resume" />
@@ -80,8 +79,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">{siteConfig.name}</p>
             <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
               {siteConfig.title} building experience across cybersecurity,
-              cloud networking, digital design, verification, and embedded
-              systems.
+              digital design, physical design, and embedded systems.
             </p>
           </div>
         </article>

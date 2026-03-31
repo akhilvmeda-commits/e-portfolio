@@ -23,9 +23,10 @@ export default function HomePage() {
             intro={siteConfig.title}
           />
           <p className="max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            Cybersecurity, hardware systems, embedded development, digital
-            design, and AI-assisted engineering are the areas I am actively
-            building through coursework, internships, and hands-on projects.
+            I am building toward hardware and systems work that mixes digital
+            design, physical design, embedded development, and security. Most
+            of this site is really a snapshot of what I have been learning
+            through classes, clubs, internships, and projects.
           </p>
           <div className="flex flex-wrap gap-4">
             <ButtonLink href="/projects" label="View Projects" />
@@ -35,6 +36,7 @@ export default function HomePage() {
               variant="secondary"
               download
             />
+            <ButtonLink href="/coursework" label="View Courses" variant="ghost" />
             <ButtonLink href="/contact" label="Contact Me" variant="ghost" />
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
@@ -73,12 +75,12 @@ export default function HomePage() {
               Focus
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              Security-minded systems work with hardware depth.
+              Hardware depth with a systems mindset.
             </h2>
             <p className="mt-4 leading-8 text-slate-300">
-              I am intentionally growing toward roles where digital logic,
-              embedded software, verification, networking, and system security
-              reinforce one another instead of living in separate silos.
+              I am most interested in work where digital logic, embedded
+              software, physical design, networking, and security connect
+              instead of living in separate silos.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -125,7 +127,7 @@ export default function HomePage() {
               Recent project work
             </h2>
             <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">
-              Digital design, embedded systems, and secure infrastructure are
+              Physical design, embedded systems, and secure infrastructure are
               the main threads I am developing right now.
             </p>
           </div>
@@ -145,12 +147,12 @@ export default function HomePage() {
                 {featuredProject.title}
               </p>
               <h3 className="text-3xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Digital design and verification
+                Physical design and chip implementation
               </h3>
               <p className="leading-8 text-slate-600 dark:text-slate-300">
-                A case study centered on parameterized RTL,
-                simulation-driven debug, and testbench validation using
-                SystemVerilog, Cadence Xcelium, and waveform analysis.
+                A shorter case study on the physical design side of Silicon
+                Jackets onboarding, including floorplanning, timing analysis,
+                DRC debugging, and SRAM layout fixes.
               </p>
               <ButtonLink href="/projects" label="Read the Case Study" />
             </div>

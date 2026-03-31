@@ -8,7 +8,7 @@ import { featuredProject, projectCards } from "@/content/site";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "My project portfolio featuring a digital design and verification case study plus embedded and cybersecurity work.",
+    "My project portfolio featuring a physical design case study plus embedded and cybersecurity work.",
 };
 
 export default function ProjectsPage() {
@@ -16,7 +16,7 @@ export default function ProjectsPage() {
     <div className="mx-auto max-w-6xl space-y-16 px-6 py-16">
       <PageHeader
         title="Projects"
-        intro="Selected work in digital design, embedded systems, and security."
+        intro="Selected work in physical design, embedded systems, and security."
       />
 
       <section className="section-panel overflow-hidden rounded-[36px]">
@@ -53,8 +53,8 @@ export default function ProjectsPage() {
               </div>
             </div>
             <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">
-              SystemVerilog design, simulation, waveform debugging, and
-              self-checking validation for a parameterized RTL block.
+              Physical design onboarding work focused on layout flow, timing,
+              Tcl automation, and DRC debugging around SRAM macros.
             </p>
           </aside>
 
@@ -66,6 +66,31 @@ export default function ProjectsPage() {
               <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
                 {featuredProject.overview.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </section>
+
+            <section className="space-y-4">
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
+                Visuals from the Project
+              </h3>
+              <div className="grid gap-4 md:grid-cols-3">
+                {featuredProject.gallery.map((image) => (
+                  <figure
+                    key={image.src}
+                    className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200}
+                      height={900}
+                      className="h-52 w-full object-cover"
+                    />
+                    <figcaption className="px-4 py-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
                 ))}
               </div>
             </section>

@@ -25,6 +25,14 @@ export type ProjectCardData = {
   tags: string[];
 };
 
+export type CourseCardData = {
+  code: string;
+  title: string;
+  status: string;
+  summary: string;
+  takeaways: string[];
+};
+
 export const siteConfig = {
   name: "Akhil Meda",
   title: "Computer Engineering Student at Georgia Tech",
@@ -37,12 +45,13 @@ export const siteConfig = {
   resumePath: "/resume/Akhil-Meda-Resume.pdf",
   siteUrl: "https://e-portfolio-1100.vercel.app",
   description:
-    "Recruiter-facing ePortfolio highlighting my work in cybersecurity, embedded systems, digital design, and secure hardware workflows as a Georgia Tech Computer Engineering student.",
+    "Recruiter-facing ePortfolio highlighting my work in cybersecurity, embedded systems, digital design, and physical design as a Georgia Tech Computer Engineering student.",
 };
 
 export const navItems: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/coursework", label: "Courses" },
   { href: "/resume", label: "Resume" },
   { href: "/career-goals", label: "Career Goals" },
   { href: "/projects", label: "Projects" },
@@ -52,15 +61,15 @@ export const navItems: NavItem[] = [
 export const homeHighlights = [
   {
     label: "Focus Areas",
-    value: "Secure hardware, embedded systems, verification, and AI-assisted engineering",
+    value: "Secure hardware, embedded systems, physical design, and AI-assisted engineering",
   },
   {
     label: "Current Momentum",
-    value: "I am building digital design fluency through Silicon Jackets, FPGA work, and hands-on debugging",
+    value: "I am building hardware depth through Silicon Jackets, ECE 2020, ECE 2035, and hands-on debugging",
   },
   {
     label: "Professional Lens",
-    value: "I approach engineering through systems thinking shaped by cybersecurity operations, cloud networking, and hardware reliability",
+    value: "I approach engineering through systems thinking shaped by cybersecurity, low-level programming, and hardware reliability",
   },
 ];
 
@@ -82,22 +91,52 @@ export const metricCards = [
 export const quickFacts = [
   "Incoming Network Engineer Intern at Qualcomm for Summer 2026",
   "Network and Cybersecurity Intern at Alpha Team Solutions",
-  "Silicon Jackets member focused on digital design and verification onboarding",
+  "Silicon Jackets member working through digital and physical design onboarding",
   "GTXR Rocket Club contributor working on embedded bring-up and PCB driver validation",
 ];
 
 export const aboutParagraphs = [
-  "I am a Computer Engineering student at Georgia Tech building my portfolio at the intersection of cybersecurity, digital design, and dependable hardware systems. I started from a security-first mindset by learning how systems fail, how networks are observed, and how reliable engineering depends on clear interfaces, disciplined debugging, and strong operational habits. That foundation now shapes the way I approach hardware and embedded work. I do not see software, networks, and digital logic as separate domains; I see them as connected layers in a larger system that has to stay observable, secure, and resilient under real constraints.",
-  "Through internships, technical clubs, and independent engineering work, I have developed a hands-on approach that blends curiosity with execution. At Alpha Team Solutions, I have worked on cloud networking and cybersecurity tasks such as configuring secure Google Cloud Platform environments, improving traffic visibility, and supporting API and webhook-based workflows with logging and operational safeguards. In student organizations, I have been pushing further into low-level engineering through FPGA-oriented design exercises, parameterized RTL, waveform-driven debug, and embedded hardware bring-up. Those experiences keep confirming the same pattern for me: I am most engaged when I can turn abstract requirements into systems that can be tested, validated, and improved through evidence.",
-  "I am especially interested in embedded systems, hardware verification, digital design, and secure system architecture because those areas demand both precision and judgment. Writing synthesizable SystemVerilog, building testbench-driven validation, and debugging simulation mismatches require the same disciplined thinking that also matters in networking and security work. That crossover is a big part of what motivates me. I want to become an engineer who understands not only how to build hardware-adjacent systems, but also how to secure them, observe them, and reason about failure modes early in the design lifecycle.",
-  "Leadership and mentorship are also part of how I want to grow professionally. Whether I am helping teammates ramp up on tooling, explaining technical tradeoffs, or supporting collaborative problem-solving in student organizations, I care about making complex work more accessible without watering it down. Long term, I want to grow into roles where I can lead technically credible teams, contribute to secure hardware and systems programs, and operate in high-accountability environments such as defense, infrastructure, or aerospace. This ePortfolio reflects that direction: practical systems work today, deeper verification and embedded experience during college, and eventually leadership in secure hardware engineering.",
+  "I am a Computer Engineering student at Georgia Tech, and most of the work I am drawn to sits somewhere between hardware, security, and low-level systems. I started out leaning more toward cybersecurity, but the more I worked through networking, digital design, and embedded projects, the more I realized I like being close to the actual system. I like figuring out why something breaks, what the constraints really are, and how to make the next version cleaner and more reliable.",
+  "A lot of that growth has come from doing the work in different settings. At Alpha Team Solutions, I have worked on cloud networking and cybersecurity tasks like setting up secure Google Cloud Platform environments, improving traffic visibility, and supporting API and webhook workflows with better logging. In Silicon Jackets and GTXR Rocket Club, I have been getting deeper into hardware-adjacent work through RTL, physical design, waveform debug, and board bring-up. That mix has been good for me because it keeps pushing me to connect software, hardware, and operations instead of treating them like separate lanes.",
+  "Coursework has also helped sharpen what I actually enjoy. ECE 2020 made digital logic feel real, not just theoretical, and ECE 2035 has been pushing me further into C and RISC-V assembly. I like the feeling of working closer to the machine, where small decisions actually matter. That is a big reason I am interested in embedded systems, digital design, physical design, and secure system architecture.",
+  "Outside of engineering, I am pretty competitive with racket sports, so I am always up for tennis, pickleball, or really anything in that category. I also play guitar, which is a good reset from technical work. I think both of those carry over into how I work: I like repetition, steady improvement, and getting better by actually putting the reps in. Long term, I want to grow into secure hardware and systems roles where I can keep building technical depth and eventually lead strong engineering work.",
 ];
 
 export const aboutBullets = [
-  "I bring a security-minded systems perspective with growing depth in hardware and verification workflows",
-  "I am comfortable moving between cloud and networking tasks and lower-level engineering problems",
-  "I am especially interested in secure digital systems, embedded interfaces, observability, and technical leadership",
-  "I am building credibility through clubs, internships, certifications, and deliberate practice",
+  "Security-minded with growing depth in digital design, physical design, and embedded workflows",
+  "Comfortable moving between cloud and networking tasks and lower-level engineering problems",
+  "Interested in secure digital systems, low-level programming, observability, and technical leadership",
+  "Outside class and work, I play tennis, pickleball, other racket sports, and guitar",
+];
+
+export const courseworkIntro =
+  "These are the classes that are shaping the direction I am moving in most. I pay the most attention to courses that build hardware intuition, lower-level programming skill, and a better feel for how systems work under the hood.";
+
+export const coursework: CourseCardData[] = [
+  {
+    code: "ECE 2020",
+    title: "Digital Design Systems",
+    status: "Completed",
+    summary:
+      "This course gave me a much stronger foundation in digital logic and helped me think in terms of combinational and sequential systems instead of only software behavior.",
+    takeaways: [
+      "Built intuition for logic design, timing, and structured hardware thinking",
+      "Made later SystemVerilog and verification work feel much more concrete",
+      "Strengthened my interest in hardware workflows beyond the classroom",
+    ],
+  },
+  {
+    code: "ECE 2035",
+    title: "Programming for Hardware/Software Systems",
+    status: "In Progress",
+    summary:
+      "I am taking this class now, and it has been especially useful because it pushes me deeper into C, memory-level thinking, and RISC-V assembly.",
+    takeaways: [
+      "Getting more comfortable with lower-level programming and machine-oriented problem solving",
+      "Building better intuition for how software maps onto hardware behavior",
+      "Reinforcing why I like embedded systems and hardware-adjacent work",
+    ],
+  },
 ];
 
 export const resumeSkills: SkillGroup[] = [
@@ -192,25 +231,42 @@ export const roadmapItems: RoadmapItem[] = [
 ];
 
 export const featuredProject = {
-  title: "Silicon Jackets Onboarding: Digital Design and Verification",
-  image: "/images/projects/silicon-jackets.svg",
-  alt: "Graphic of an adder waveform and verification dashboard.",
-  tools: ["SystemVerilog", "Cadence Xcelium", "SimVision", "Parameterized RTL", "Self-checking testbenches"],
+  title: "Silicon Jackets Onboarding: Physical Design",
+  image: "/images/projects/pd2026-extracted/page22_1_Image1.jpg",
+  alt: "Physical design screenshot showing SRAM routing and DRC investigation work.",
+  tools: ["Physical Design", "Cadence Innovus", "Static Timing Analysis", "Tcl", "Python"],
+  gallery: [
+    {
+      src: "/images/projects/pd2026-extracted/page3_1_Image1.jpg",
+      alt: "Floorplan screenshot from the Silicon Jackets physical design onboarding project.",
+      caption: "Early floorplanning work helped me see how chip layout decisions start before detailed routing ever happens.",
+    },
+    {
+      src: "/images/projects/pd2026-extracted/page22_1_Image1.jpg",
+      alt: "Physical design screenshot showing DRC markers around SRAM regions.",
+      caption: "One of the most useful parts of the project was tracing DRC issues back to SRAM pin placement and routing choices.",
+    },
+    {
+      src: "/images/projects/pd2026-extracted/page26_1_Image1.jpg",
+      alt: "Physical design screenshot showing a cleaner routed layout after fixes.",
+      caption: "After changing routing assumptions and adding keep-out margins, I was able to move the design toward a clean result.",
+    },
+  ],
   overview: [
-    "This project was my focused onboarding into digital design and verification through Silicon Jackets, and my goal was to build real comfort with RTL workflows instead of only learning the concepts at a surface level. The core assignment centered on designing and validating a parameterized adder in SystemVerilog, which made it a strong entry point for practicing clean combinational logic, configurable bit widths, and a disciplined simulation process. Even though the circuit itself was intentionally approachable, the real value came from the workflow around it: understanding module interfaces, thinking through corner cases, and using evidence from the testbench and waveform output to determine whether the implementation behaved correctly.",
-    "The design portion emphasized writing synthesizable RTL that stayed readable and scalable. Instead of treating the adder as a single hard-coded exercise, I used the parameterized structure to think about reuse and configurability from the start. That meant paying attention to signal widths, carry behavior, and how design choices would scale when the module ran under multiple configurations. In parallel, the verification side introduced the habits that make low-level work credible: creating test scenarios, checking expected behavior systematically, and using simulation results to identify mismatches instead of guessing at causes.",
+    "This project was my Discovery Project and part of the Silicon Jackets physical design onboarding process. Instead of stopping at RTL, I worked through how a design moves closer to an actual chip by looking at floorplanning, routing, timing, and design rule issues. That made it a really useful project for me because it showed the physical side of hardware work that I had not spent much time with before.",
+    "The assignment covered OpenLane flow steps, timing analysis, Tcl scripting, and a longer physical design debugging process around a 32-bit adder and SRAM macros. What I liked most was that it was not just about following a checklist. I had to read reports, interpret layout behavior, make changes, and understand why those changes mattered.",
   ],
   workflow: [
-    "My workflow started by understanding the design intent, then translating that intent into a clean SystemVerilog module with parameterized width support. From there, I built a validation loop around Cadence Xcelium and SimVision: run simulations, inspect failing cases, compare expected and observed outputs, refine the RTL or testbench, and repeat. That loop was valuable because it made debugging concrete. A mismatch in a waveform is not just an error message; it is a chance to isolate exactly which inputs, carries, or timing assumptions are causing the issue.",
-    "I also treated the onboarding process as a chance to improve how I think about verification itself. Even for a relatively contained module, it became clear that strong validation requires more than a few happy-path tests. Boundary values, carry propagation behavior, and width-dependent edge cases matter because they reveal where assumptions break down. Building and refining a self-checking testbench reinforced for me that verification should support iteration, not just confirm what I already expect to be true.",
+    "I started by following the OpenLane notebook to get a clearer feel for the physical design flow, especially floorplanning, PDN generation, and GDS streamout. From there, I moved into the Silicon Jackets onboarding tasks that focused more on timing, debugging the flow, and using Tcl and Python in a way that felt closer to real team workflows.",
+    "The part that stuck with me most was the DRC investigation around SRAM placement. I had to inspect reports, zoom in on the layout, look at the LEF data, and figure out why the routing was conflicting with the macro. That led me to make targeted fixes like changing the bottom routing layer and adding keep-out margins around the SRAM blocks.",
   ],
   challenges: [
-    "One challenge in onboarding work like this is balancing simplicity with rigor. Because an adder is conceptually straightforward, it is easy to move too quickly and assume correctness. The more useful lesson for me was slowing down and treating the project like a real engineering artifact: verifying that parameter choices are respected, checking corner conditions, and making sure the validation setup is strong enough to catch mistakes that are easy to miss in a quick visual review.",
-    "Another challenge was becoming more fluent with the tooling. Cadence Xcelium and waveform-based debug require familiarity not only with the language, but also with how simulation evidence is surfaced and interpreted. Learning to navigate waveforms, isolate mismatches, and use the testbench as a guide made the project much more valuable than a code-only exercise. It gave me confidence in a workflow I can apply to future modules that are more complex than an adder.",
+    "The hardest part was getting comfortable with how many layers of context physical design needs. I was not just reading code anymore. I had to think about timing reports, routing layers, macro constraints, and what the tool was actually doing in the layout.",
+    "I also had to get more comfortable being patient with debugging. Some of the answers were not obvious from the first error message, so I had to trace problems step by step, use the documentation, and learn enough of the tooling to understand what I was looking at instead of guessing.",
   ],
   results: [
-    "The immediate outcome was a functioning parameterized RTL module backed by testbench-based validation and a stronger working knowledge of simulation-driven debug. More importantly, the project established a foundation for my future digital design work. It gave me a concrete process for moving from design intent to implementation, from implementation to verification, and from verification to iterative refinement.",
-    "In the context of my broader development, this project marks technical growth rather than a final destination. It shows that I am building the habits required for more advanced hardware work: structured debugging, respect for edge cases, attention to reusable design, and a willingness to learn the tooling deeply enough to trust the results. That foundation is directly relevant to the secure hardware, verification, and embedded engineering roles I want to pursue over time.",
+    "By the end of the project, I had a much better feel for what physical design engineers actually spend time doing. I was not just learning terms like floorplan, timing closure, or DRC cleanup. I was using them in context and seeing how design decisions show up in the layout.",
+    "This project also gave me stronger evidence that I want to keep going deeper into hardware. It connected well with what I learned in ECE 2020 and what I am building now through lower-level programming in ECE 2035. More than anything, it made the path from digital design to real chip implementation feel a lot more real.",
   ],
 };
 
@@ -266,7 +322,7 @@ export const contactCards = [
 ];
 
 export const footerBlurb =
-  "I built this portfolio to show how I am growing across secure systems, digital design, embedded workflows, and hands-on technical project work.";
+  "I built this portfolio to show how I am growing across secure systems, digital design, physical design, and hands-on technical project work.";
 
 // Replace placeholder SVGs in /public/images with personal photos, screenshots,
 // waveform captures, or lab images as new projects are completed.
