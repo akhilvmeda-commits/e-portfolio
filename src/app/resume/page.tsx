@@ -7,7 +7,7 @@ import { resumeHighlights, resumeSkills, siteConfig } from "@/content/site";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Resume page for Akhil Meda with a downloadable PDF and summary of technical skills, tools, and engineering focus areas.",
+    "Resume page with a downloadable PDF and a summary of my technical skills, tools, and engineering focus areas.",
 };
 
 export default function ResumePage() {
@@ -35,9 +35,8 @@ export default function ResumePage() {
             <ButtonLink href={siteConfig.resumePath} label="Open PDF" variant="secondary" external />
           </div>
           <p className="mt-6 text-sm leading-6 text-slate-400">
-            The file at <code>{siteConfig.resumePath}</code> is included as a
-            starter resume PDF. Replace it whenever you update your latest
-            resume version.
+            The file at <code>{siteConfig.resumePath}</code> is the resume PDF
+            I am currently using for this portfolio.
           </p>
         </article>
 
@@ -56,7 +55,7 @@ export default function ResumePage() {
             <div className="space-y-4 px-6 py-10 text-sm text-slate-600 dark:text-slate-300">
               <p>
                 Your browser could not render the PDF preview. Use the button
-                below to open it directly.
+                below to open my resume directly.
               </p>
               <ButtonLink href={siteConfig.resumePath} label="Open Resume PDF" variant="secondary" external />
             </div>
@@ -70,7 +69,7 @@ export default function ResumePage() {
             Skills Summary
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-            Technical tools and domains I am building into a coherent portfolio.
+            Technical tools and domains I am building into a stronger engineering foundation.
           </h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">

@@ -7,7 +7,7 @@ import { careerGoalsIntro, roadmapItems } from "@/content/site";
 export const metadata: Metadata = {
   title: "Career Goals",
   description:
-    "Career roadmap for Akhil Meda with short-term internship goals, long-term secure hardware aspirations, and a milestone timeline.",
+    "My career roadmap, including short-term internship goals, long-term secure hardware aspirations, and a milestone timeline.",
 };
 
 export default function CareerGoalsPage() {
@@ -55,7 +55,7 @@ export default function CareerGoalsPage() {
             Timeline
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-            Milestones that turn broad ambition into an actionable path.
+            Milestones that turn broad ambition into a path I can keep acting on.
           </h2>
         </div>
         <Timeline items={roadmapItems} />

@@ -8,7 +8,7 @@ import { featuredProject, projectCards } from "@/content/site";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Project portfolio for Akhil Meda featuring a digital design and verification case study plus future embedded and cybersecurity work.",
+    "My project portfolio featuring a digital design and verification case study plus embedded and cybersecurity work.",
 };
 
 export default function ProjectsPage() {
@@ -115,8 +115,8 @@ export default function ProjectsPage() {
             Ongoing work across hardware, embedded systems, and security.
           </h2>
           <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">
-            Additional projects that are actively shaping the portfolio and
-            will expand into deeper case studies over time.
+            These are the projects actively shaping my portfolio, and I plan to
+            turn them into deeper case studies over time.
           </p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">

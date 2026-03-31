@@ -36,7 +36,7 @@ export function ContactForm() {
     // Replace this demo handler with a real email service or API route before
     // public launch if you want form submissions delivered automatically.
     setStatusMessage(
-      "Thanks for reaching out. This demo form is wired for UI behavior only, so the next step is connecting it to an email or form backend.",
+      "Thanks for reaching out. This form is currently a front-end demo, so messages are not being delivered yet.",
     );
     setFormState(initialState);
   }
@@ -90,7 +90,7 @@ export function ContactForm() {
           name="message"
           value={formState.message}
           onChange={handleChange}
-          placeholder="Share the role, collaboration, or opportunity you would like to discuss."
+          placeholder="Share the role, project, or opportunity you would like to discuss."
           required
         />
       </label>

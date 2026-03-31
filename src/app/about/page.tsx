@@ -8,7 +8,7 @@ import { aboutBullets, aboutParagraphs, siteConfig } from "@/content/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Professional biography for Akhil Meda covering cybersecurity, hardware systems, embedded interests, and long-term engineering direction.",
+    "About page covering my background in cybersecurity, hardware systems, embedded interests, and long-term engineering direction.",
 };
 
 export default function AboutPage() {
@@ -62,15 +62,14 @@ export default function AboutPage() {
             Current Direction
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-            A systems-oriented engineer building toward secure hardware
-            leadership.
+            I am building toward secure hardware and systems leadership.
           </h2>
           <p className="mt-4 leading-8 text-slate-600 dark:text-slate-300">
-            My portfolio is meant to show more than isolated achievements. It
-            communicates a direction: someone who can learn quickly, contribute
-            across technical layers, and steadily move toward roles where
-            hardware correctness, embedded integration, and security all matter
-            together.
+            I want this portfolio to show more than isolated achievements. It
+            is meant to communicate direction: I learn quickly, I like working
+            across technical layers, and I am steadily moving toward roles
+            where hardware correctness, embedded integration, and security all
+            matter together.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <ButtonLink href="/resume" label="View Resume" />
@@ -80,7 +79,7 @@ export default function AboutPage() {
           <div className="mt-8 rounded-[24px] border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
             <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">{siteConfig.name}</p>
             <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
-              {siteConfig.title} with growing experience across cybersecurity,
+              {siteConfig.title} building experience across cybersecurity,
               cloud networking, digital design, verification, and embedded
               systems.
             </p>

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Akhil Meda E-Portfolio",
     short_name: "Akhil Portfolio",
     description:
-      "Recruiter-facing engineering portfolio for Akhil Meda.",
+      "Recruiter-facing engineering portfolio highlighting my work and experience.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

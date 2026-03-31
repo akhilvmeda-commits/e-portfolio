@@ -7,7 +7,7 @@ import { contactCards } from "@/content/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact page for Akhil Meda with a recruiter-facing form UI plus email, LinkedIn, and GitHub links.",
+    "Contact page with a recruiter-facing form plus my email, LinkedIn, and GitHub links.",
 };
 
 export default function ContactPage() {
