@@ -22,11 +22,11 @@ export default function AboutPage() {
       <section className="section-panel grid gap-8 rounded-[40px] px-6 py-8 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <article className="overflow-hidden rounded-[32px] border border-slate-200 bg-slate-50 shadow-[0_24px_70px_-50px_rgba(15,23,42,0.42)] dark:border-slate-800 dark:bg-slate-950">
           <Image
-            src="/images/headshot-placeholder.svg"
-            alt="Portrait graphic for Akhil Meda."
+            src="/images/headshot.jpg"
+            alt="Portrait of Akhil Meda."
             width={900}
             height={1100}
-            className="h-[420px] w-full object-contain p-8 sm:h-[520px]"
+            className="h-[420px] w-full object-cover object-top sm:h-[520px]"
           />
         </article>
         <article className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_-50px_rgba(15,23,42,0.42)] dark:border-slate-800 dark:bg-slate-950">
