@@ -25,6 +25,26 @@ export type ProjectCardData = {
   tags: string[];
 };
 
+export type ProjectGalleryItem = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
+export type FeaturedProjectData = {
+  title: string;
+  image: string;
+  alt: string;
+  tools: string[];
+  presentationPoints: string[];
+  gallery: ProjectGalleryItem[];
+  idea: string[];
+  progress: string[];
+  successesFailures: string[];
+  skillsGained: string[];
+  finalThoughts: string[];
+};
+
 export type CourseCardData = {
   code: string;
   title: string;
@@ -230,11 +250,18 @@ export const roadmapItems: RoadmapItem[] = [
   },
 ];
 
-export const featuredProject = {
+export const featuredProject: FeaturedProjectData = {
   title: "Silicon Jackets Onboarding: Physical Design",
   image: "/images/projects/pd2026-extracted/page22_1_Image1.jpg",
   alt: "Physical design screenshot showing SRAM routing and DRC investigation work.",
   tools: ["Physical Design", "Cadence Innovus", "Static Timing Analysis", "Tcl", "Python"],
+  presentationPoints: [
+    "What the project was and why I picked it",
+    "How the work progressed over the semester",
+    "Where I got stuck and what I learned from it",
+    "The hardware and ECE skills I built along the way",
+    "How it changed what I want to keep exploring",
+  ],
   gallery: [
     {
       src: "/images/projects/pd2026-extracted/page3_1_Image1.jpg",
@@ -252,21 +279,26 @@ export const featuredProject = {
       caption: "After changing routing assumptions and adding keep-out margins, I was able to move the design toward a clean result.",
     },
   ],
-  overview: [
-    "This project was my Discovery Project and part of the Silicon Jackets physical design onboarding process. Instead of stopping at RTL, I worked through how a design moves closer to an actual chip by looking at floorplanning, routing, timing, and design rule issues. That made it a really useful project for me because it showed the physical side of hardware work that I had not spent much time with before.",
-    "The assignment covered OpenLane flow steps, timing analysis, Tcl scripting, and a longer physical design debugging process around a 32-bit adder and SRAM macros. What I liked most was that it was not just about following a checklist. I had to read reports, interpret layout behavior, make changes, and understand why those changes mattered.",
+  idea: [
+    "This project started as a way for me to explore the physical design side of hardware, which was a part of the flow I had heard about but had not really worked through myself yet. I wanted something that would move past the RTL view of a design and show me what happens when timing, routing, macros, and layout constraints start to matter.",
+    "The Silicon Jackets physical design onboarding project ended up being a good fit because it combined guided tasks with enough real debugging that I still had to think through what the tools were doing. It felt like a realistic first look at the kind of hardware work that happens after a design is written.",
   ],
-  workflow: [
+  progress: [
     "I started by following the OpenLane notebook to get a clearer feel for the physical design flow, especially floorplanning, PDN generation, and GDS streamout. From there, I moved into the Silicon Jackets onboarding tasks that focused more on timing, debugging the flow, and using Tcl and Python in a way that felt closer to real team workflows.",
-    "The part that stuck with me most was the DRC investigation around SRAM placement. I had to inspect reports, zoom in on the layout, look at the LEF data, and figure out why the routing was conflicting with the macro. That led me to make targeted fixes like changing the bottom routing layer and adding keep-out margins around the SRAM blocks.",
+    "As I got deeper into the assignment, the project became less about following instructions and more about understanding the design decisions. The part that stands out most was the DRC investigation around SRAM placement. I had to inspect reports, zoom in on the layout, look at the LEF data, and trace the conflict back to how the routing interacted with the macro.",
   ],
-  challenges: [
-    "The hardest part was getting comfortable with how many layers of context physical design needs. I was not just reading code anymore. I had to think about timing reports, routing layers, macro constraints, and what the tool was actually doing in the layout.",
-    "I also had to get more comfortable being patient with debugging. Some of the answers were not obvious from the first error message, so I had to trace problems step by step, use the documentation, and learn enough of the tooling to understand what I was looking at instead of guessing.",
+  successesFailures: [
+    "One success was getting a much clearer feel for the actual flow of physical design instead of just knowing the vocabulary. I came away with a better understanding of floorplanning, static timing analysis, design rule issues, and how tool decisions show up visually in the layout.",
+    "The harder part was that physical design requires a lot more context than I expected at first. I was not just reading code. I had to think about routing layers, macro constraints, reports, and how different files in the flow all connected. Some of the answers were not obvious from the first error message, so I had to slow down and debug much more carefully.",
   ],
-  results: [
-    "By the end of the project, I had a much better feel for what physical design engineers actually spend time doing. I was not just learning terms like floorplan, timing closure, or DRC cleanup. I was using them in context and seeing how design decisions show up in the layout.",
-    "This project also gave me stronger evidence that I want to keep going deeper into hardware. It connected well with what I learned in ECE 2020 and what I am building now through lower-level programming in ECE 2035. More than anything, it made the path from digital design to real chip implementation feel a lot more real.",
+  skillsGained: [
+    "I got more comfortable reading timing and layout information instead of only looking at source code. That includes understanding floorplanning, PDN generation, static timing analysis, and how DRC violations can come from the physical structure of a design.",
+    "I also built experience with the tooling and scripting side of the workflow. Using Tcl and Python in the context of the project helped me see how automation and report analysis fit into real hardware engineering work.",
+    "More broadly, I got better at technical debugging in an unfamiliar space. I had to use documentation, interpret evidence from the tool outputs, and make targeted changes like adjusting routing assumptions and adding keep-out margins around SRAM macros.",
+  ],
+  finalThoughts: [
+    "By the end of the project, I had a much better feel for what physical design engineers actually spend time doing. It made the path from digital design to actual chip implementation feel much more real to me.",
+    "This project definitely increased my interest in hardware. It connected well with what I learned in ECE 2020 and what I am building now through lower-level programming in ECE 2035, and it made me want to keep exploring physical design and hardware implementation work in a deeper way.",
   ],
 };
 

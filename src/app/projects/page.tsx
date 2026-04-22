@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { ProjectGallery } from "@/components/ui/project-gallery";
 import { ProjectCard } from "@/components/ui/project-card";
 import { PageHeader } from "@/components/ui/page-header";
 import { featuredProject, projectCards } from "@/content/site";
@@ -56,15 +57,30 @@ export default function ProjectsPage() {
               Physical design onboarding work focused on layout flow, timing,
               Tcl automation, and DRC debugging around SRAM macros.
             </p>
+            <div className="rounded-[24px] border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                Presentation Flow
+              </p>
+              <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                {featuredProject.presentationPoints.map((point) => (
+                  <li
+                    key={point}
+                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 dark:border-slate-800 dark:bg-slate-950"
+                  >
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </aside>
 
           <div className="space-y-8">
             <section className="space-y-4">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Overview
+                Discovery Project Idea
               </h3>
               <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
-                {featuredProject.overview.map((paragraph) => (
+                {featuredProject.idea.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
@@ -74,33 +90,18 @@ export default function ProjectsPage() {
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
                 Visuals from the Project
               </h3>
-              <div className="grid gap-4 md:grid-cols-3">
-                {featuredProject.gallery.map((image) => (
-                  <figure
-                    key={image.src}
-                    className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900"
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={1200}
-                      height={900}
-                      className="h-52 w-full object-cover"
-                    />
-                    <figcaption className="px-4 py-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                      {image.caption}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+              <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">
+                I enlarged these images and made them clickable so they are easier to walk through during the Discovery Project Showcase.
+              </p>
+              <ProjectGallery images={featuredProject.gallery} />
             </section>
 
             <section className="space-y-4">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Workflow
+                Project Progress
               </h3>
               <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
-                {featuredProject.workflow.map((paragraph) => (
+                {featuredProject.progress.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
@@ -108,10 +109,10 @@ export default function ProjectsPage() {
 
             <section className="space-y-4">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Challenges
+                Project Successes and Failures
               </h3>
               <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
-                {featuredProject.challenges.map((paragraph) => (
+                {featuredProject.successesFailures.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
@@ -119,10 +120,21 @@ export default function ProjectsPage() {
 
             <section className="space-y-4">
               <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Results and Impact
+                ECE Skills Gained
               </h3>
               <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
-                {featuredProject.results.map((paragraph) => (
+                {featuredProject.skillsGained.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </section>
+
+            <section className="space-y-4">
+              <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
+                Final Thoughts
+              </h3>
+              <div className="space-y-4 text-base leading-8 text-slate-600 dark:text-slate-300">
+                {featuredProject.finalThoughts.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
